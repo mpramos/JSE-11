@@ -1,4 +1,5 @@
 //?1
+
 const year = 1991;
 let delayInSeconds = 0.00016;
 let area = (16 * 3.14);
@@ -28,7 +29,6 @@ console.log(y); // -> 0.00123
 
 let _a = 1 / 0;
 let _b = -Infinity;
-
 console.log(_a); // -> Infinity
 console.log(_b); // -> -Infinity
 console.log(typeof _a); // -> number
