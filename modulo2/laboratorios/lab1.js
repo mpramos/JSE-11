@@ -17,6 +17,7 @@ let telefonoContacto2="0866 398 2895" //string
 let telefonoContacto3="0800 1111" //string
 
 
+
 //? Primera forma 
 // console.log(nombreContacto1 + '/' + telefonoContacto1 + '/' + correoElectronicoContacto1);
 // console.log(nombreContacto3 + '/' + telefonoContacto3 + '/' + correoElectronicoContacto3);
