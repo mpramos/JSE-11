@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let isUserReady = confirm("¿Estás listo?");
+
+        if (isUserReady) {
+            console.log("¡Usuario listo!");
+        }
+
+        if (isUserReady == false) {
+            console.log("¡Usuario no esta listo!");
+        }
+
+
+        // SEGUNDO EJEMPLO
+
+       /* if (condición) {
+            condición - código verdadero
+        } else {
+            condición - código falso
+        }*/
+
+        // Usando la nueva sintaxis, podemos reescribir nuestro ejemplo anterior:
+
+        let _isUserReady = confirm("¿Estás listo?");
+
+        if (_isUserReady) {
+            console.log("¡Usuario listo!");
+        } else {
+            console.log("¡Usuario no esta listo!");
+        }
+
+    </script>
+</body>
+
+</html>
