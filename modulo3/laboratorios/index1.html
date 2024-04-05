@@ -22,7 +22,24 @@
             phone: "0800 1111",
             email: "libero@vallis.edu"
         }];
-        
+        // Agregar un nuevo Contacto
+        let nombreContacto = prompt('Ingrese el nombre del nuevo contacto')
+        //alert(nombreContacto)
+        let telefonoContacto = prompt('Ingrese el telefono del nuevo contacto')
+        //alert(telefonoContacto)
+        let emailContacto = prompt('Ingrese el email del nuevo contacto')
+        //alert(emailContacto)
+        let nuevoContacto ={
+            name: nombreContacto,
+            phone:telefonoContacto,
+            email: emailContacto
+        }
+        contacts.push(nuevoContacto)
+        alert(nuevoContacto.name + ' ' + nuevoContacto.phone + ' '+nuevoContacto.email)
+        console.log(contacts);
+        // Mostrar el primer contacto
+        // Mostrar el ultimo contacto
+
     </script>
 </body>
 
