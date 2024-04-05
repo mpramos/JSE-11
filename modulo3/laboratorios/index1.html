@@ -24,11 +24,8 @@
         }];
         // Agregar un nuevo Contacto
         let nombreContacto = prompt('Ingrese el nombre del nuevo contacto')
-        //alert(nombreContacto)
         let telefonoContacto = prompt('Ingrese el telefono del nuevo contacto')
-        //alert(telefonoContacto)
         let emailContacto = prompt('Ingrese el email del nuevo contacto')
-        //alert(emailContacto)
         let nuevoContacto ={
             name: nombreContacto,
             phone:telefonoContacto,
@@ -38,7 +35,9 @@
         alert(nuevoContacto.name + ' ' + nuevoContacto.phone + ' '+nuevoContacto.email)
         console.log(contacts);
         // Mostrar el primer contacto
+        alert(`PRIMER CONTACTO :${contacts[0].name}/ ${contacts[0].email}/ ${contacts[0].phone}`)
         // Mostrar el ultimo contacto
+        alert(`ULTIMO CONTACTO :${contacts[contacts.length-1].name}/${contacts[contacts.length-1].email}/ ${contacts[contacts.length-1].phone}`)
 
     </script>
 </body>
