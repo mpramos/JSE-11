@@ -20,7 +20,7 @@ console.log(`mean: ${meanTemp}`); // -> mean: 18.083333333333332
 
 //!
 
-let name = Alice
+let name = 'Alice'
 
 function showName() {
     console.log(name);
@@ -29,7 +29,7 @@ function showName() {
 showName(); // -> Alice
 
 
-let _name = Alice
+let _name = 'Alice'
 
 showName(); // -> Alice
 
