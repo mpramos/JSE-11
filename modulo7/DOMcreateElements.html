@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM 2</title>
+</head>
+<body>
+    <ul>
+        <li>lista 1</li>
+        <li>lista 1</li>
+        <li>lista 1</li>
+        <li>lista 1</li>
+        <li>lista 1</li>
+    </ul>
+</body>
+<script>
+    let title
+    for (let i = 0; i < 3; i++) {
+    title=document.createElement('h1')
+    title.className='title'
+    title.style.fontSize='24px'
+    title.textContent='Creando el elemento h1'
+    document.body.appendChild(title)
+}
+ const ul= document.querySelector('ul')
+//  const listas= document.querySelectorAll('li')
+//  for (const lista of listas) {
+//     ul.removeChild(lista)
+//  }
+ul.innerHTML=''
+
+
+
+</script>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button >Click Me</button>
+    <button onclick="clickMe()">Hazme Click</button>
+    <button id="button1">Click Me Button 1</button>
+    <button id="button2">Click Me Button 2</button>
+
+    <script>
+        const button= document.querySelector('button')
+        button.addEventListener('click',e=>{
+            console.log('objeto e ',e);
+            console.log('etiqueta del elemento que activó ese evento ',e.target);
+            console.log('contenido de texto de la etiqueta que escuchó ése evento ',e.target.textContent);    
+        })
+        const clickMe=()=>{
+            alert('Me hiciste Click')
+        }
+        const button1=document.querySelector('#button1')
+        button1.addEventListener('dblclick',e=>{
+            console.log('objeto e ',e);
+            console.log('etiqueta del elemento que activó ese evento ',e.target);
+            console.log('contenido de texto de la etiqueta que escuchó ése evento ',e.target.textContent);    
+        })
+        const button2=document.querySelector('#button2')
+        button2.addEventListener('mouseenter',e=>{
+            console.log('objeto e ',e);
+            console.log('etiqueta del elemento que activó ese evento ',e.target);
+            console.log('contenido de texto de la etiqueta que escuchó ése evento ',e.target.textContent);    
+        })
+    </script>
+</body>
+</html>

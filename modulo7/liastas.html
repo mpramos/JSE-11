@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <h1> Practica con InnerHTML 1</h1>
+        <h1> Practica con InnerHTML 2</h1>
+        <h1> Practica con InnerHTML 3</h1>
+        <h2>Evolutech</h2>
+        <ul>
+            <li>lista 1</li>
+                <li>lista 2</li>
+                <li>lista 3</li>
+                <li>lista 4</li>
+                <li>lista 5</li>
+        </ul>
+    </div>
+    <script>
+        const titles=document.querySelectorAll('h1')
+        titles.forEach((title,i)=>{
+            if (i%2===0) {
+                title.style.color='green'
+                title.style.fontSize='40px'
+            } else {
+                title.style.color='red'
+                title.style.fontSize='20px'
+                
+            }
+        })
+    </script>
+</body>
+</html>

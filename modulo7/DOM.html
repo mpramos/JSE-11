@@ -9,6 +9,7 @@
     <h1 class="title" id="first-title">First Title</h1>
     <h1 class="title" id="second-title">Second Title</h1>
     <h1 class="title" id="third-title">Third Title</h1>
+    <h1></h1>
    <script>
     // const allTitles = document.getElementsByTagName('h1')
     // console.log(allTitles);
@@ -16,16 +17,33 @@
     // for (let i = 0; i < allTitles.length; i++) {
     //     console.log(allTitles[i]);
     // }
-    const allTitles = document.getElementsByClassName('title')
-    console.log(allTitles);
-    console.log(allTitles.length);
-    for (let i = 0; i < allTitles.length; i++) {
-     console.log(allTitles[i]);
+    // const allTitles = document.getElementsByClassName('title')
+    // console.log(allTitles);
+    // console.log(allTitles.length);
+    // for (let i = 0; i < allTitles.length; i++) {
+    //  console.log(allTitles[i]);
         
-    }
-    let firstTitle = document.getElementById('first-title')
-    console.log('FIRST TITLE');
-    console.log(firstTitle);
+    // }
+    // let firstTitle = document.getElementById('first-title')
+    // console.log('FIRST TITLE');
+    // let firstTitle= document.querySelector('h1')
+    // let firstTitle= document.querySelector('.title')
+    // let allTitles = document.querySelectorAll('.title')
+    // for (let i = 0; i < allTitles.length; i++) {
+    //     console.log(allTitles[i]);
+    // }
+    // let allTitles=document.querySelectorAll('.title')
+    // for (let i = 0; i < allTitles.length; i++) {
+    //     console.log(allTitles[i]);
+    // }
+    // const titles= document.querySelectorAll('h1')
+    // titles[3].className='title'
+    // titles[3].id='fourth-title'
+         const titles=document.querySelectorAll('h1')
+        //  titles[3].setAttribute('class','title')
+        //  titles[3].setAttribute('id','fourth-title')
+         titles[3].classList.add('title','header-title')
+        titles[3].textContent='Fourth Title'
    </script>
     
 </body>
